@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyah Restaurant | مطعم رياح</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="en">Riyah Restaurant</span>
+                <span class="ar">مطعم رياح</span>
+            </div>
+            <div class="language-switch">
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ar">عربي</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#menu" data-en="Menu" data-ar="القائمة">Menu</a></li>
+                <li><a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>
+                        <span class="en">Welcome to Riyah Restaurant</span>
+                        <span class="ar">مرحباً بكم في مطعم رياح</span>
+                    </h1>
+                    <p>
+                        <span class="en">Experience the finest dining with our exquisite cuisine</span>
+                        <span class="ar">استمتع بأفضل تجربة طعام مع مأكولاتنا الشهية</span>
+                    </p>
+                    <a href="#menu" class="cta-button">
+                        <span class="en">View Menu</span>
+                        <span class="ar">شاهد القائمة</span>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-dish.jpg" alt="Signature Dish" class="floating-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>
+                <span class="en">Our Menu</span>
+                <span class="ar">قائمة الطعام</span>
+            </h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="appetizers">
+                    <span class="en">Appetizers</span>
+                    <span class="ar">المقبلات</span>
+                </button>
+                <button class="category-btn" data-category="main">
+                    <span class="en">Main Course</span>
+                    <span class="ar">الأطباق الرئيسية</span>
+                </button>
+                <button class="category-btn" data-category="desserts">
+                    <span class="en">Desserts</span>
+                    <span class="ar">الحلويات</span>
+                </button>
+                <button class="category-btn" data-category="drinks">
+                    <span class="en">Drinks</span>
+                    <span class="ar">المشروبات</span>
+                </button>
+            </div>
+            <div class="menu-items">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>
+                <span class="en">Gallery</span>
+                <span class="ar">معرض الصور</span>
+            </h2>
+            <div class="gallery-grid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>
+                <span class="en">Contact Us</span>
+                <span class="ar">اتصل بنا</span>
+            </h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            <span class="en">123 Restaurant Street, City, Country</span>
+                            <span class="ar">١٢٣ شارع المطعم، المدينة، البلد</span>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p dir="ltr">+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@riyahrestaurant.com</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" data-placeholder-ar="الاسم" required>
+                    <input type="email" placeholder="Your Email" data-placeholder-ar="البريد الإلكتروني" required>
+                    <input type="tel" placeholder="Phone Number" data-placeholder-ar="رقم الهاتف">
+                    <select required>
+                        <option value="" data-en="Select Reservation Type" data-ar="اختر نوع الحجز">Select Reservation Type</option>
+                        <option value="dinner" data-en="Dinner" data-ar="عشاء">Dinner</option>
+                        <option value="lunch" data-en="Lunch" data-ar="غداء">Lunch</option>
+                        <option value="special" data-en="Special Event" data-ar="مناسبة خاصة">Special Event</option>
+                    </select>
+                    <textarea placeholder="Your Message" data-placeholder-ar="رسالتك" required></textarea>
+                    <button type="submit" class="submit-btn">
+                        <span class="en">Send Message</span>
+                        <span class="ar">إرسال الرسالة</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>
+                    <span class="en">Opening Hours</span>
+                    <span class="ar">ساعات العمل</span>
+                </h3>
+                <p>
+                    <span class="en">Monday - Friday: 11:00 AM - 10:00 PM</span>
+                    <span class="ar">الإثنين - الجمعة: ١١:٠٠ ص - ١٠:٠٠ م</span>
+                </p>
+                <p>
+                    <span class="en">Saturday - Sunday: 10:00 AM - 11:00 PM</span>
+                    <span class="ar">السبت - الأحد: ١٠:٠٠ ص - ١١:٠٠ م</span>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>
+                    <span class="en">Follow Us</span>
+                    <span class="ar">تابعنا</span>
+                </h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="en">&copy; 2024 Riyah Restaurant. All rights reserved.</span>
+                <span class="ar">© ٢٠٢٤ مطعم رياح. جميع الحقوق محفوظة.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
